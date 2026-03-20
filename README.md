@@ -18,6 +18,36 @@ A NativeScript MQTT client with **full MQTT 5.0 support**, built on the [Eclipse
 npm install nativescript-mqtt5
 ```
 
+## Platform Configuration
+
+By default, Android and iOS block non-HTTPS (cleartext) traffic. If your MQTT broker uses `ws://` instead of `wss://`, you need to allow cleartext traffic.
+
+### Android
+
+Edit `App_Resources/Android/src/main/AndroidManifest.xml` and add `android:usesCleartextTraffic="true"` to the `<application>` tag:
+
+```xml
+<application
+    android:usesCleartextTraffic="true"
+    ... >
+```
+
+### iOS
+
+Edit `App_Resources/iOS/Info.plist` and add the following inside the `<dict>` tag:
+
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>
+```
+
+> ⚠️ **Note:** For production apps, it's recommended to use secure WebSocket connections (`wss://`) on port 443 instead of disabling security checks.
+
+---
+
 ## Quick Start
 
 ### 1. Import
