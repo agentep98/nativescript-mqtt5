@@ -1,0 +1,54 @@
+{
+  "name": "nativescript-mqtt5",
+  "version": "1.0.0",
+  "description": "NativeScript MQTT client with full MQTT 5.0 support. Features include Session Expiry, Message Expiry, User Properties, Content Type, and more.",
+  "main": "index",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "ios": "6.0.0",
+      "android": "6.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agentep98/nativescript-mqtt5.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "MQTT",
+    "MQTT5",
+    "MQTT 5.0",
+    "IoT",
+    "WebSocket",
+    "JavaScript",
+    "TypeScript",
+    "iOS",
+    "Android",
+    "messaging",
+    "pub/sub"
+  ],
+  "author": {
+    "name": "Antonio Perri",
+    "email": "perrianton@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Eduardo Speroni",
+      "url": "https://github.com/edusperoni"
+    },
+    {
+      "name": "IBM Corp.",
+      "url": "https://www.eclipse.org/paho/"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/agentep98/nativescript-mqtt5/issues"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/agentep98/nativescript-mqtt5#readme",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "@valor/nativescript-websockets": "~2.0.3"
+  }
+}
